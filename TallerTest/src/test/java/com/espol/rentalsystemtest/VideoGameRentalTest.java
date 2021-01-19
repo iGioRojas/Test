@@ -5,6 +5,7 @@
  */
 package com.espol.rentalsystemtest;
 
+import espol.tallertest.*;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -21,7 +22,7 @@ public class VideoGameRentalTest {
     public VideoGameRentalTest() {
     }
     
-	Ps3Game littleBigPlanet;
+    Ps3Game littleBigPlanet;
     Xbox360Game fable2;
     WiiGame superSmashBrosBrawl;
     

@@ -5,6 +5,7 @@
  */
 package com.espol.rentalsystemtest;
 
+import espol.tallertest.*;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

@@ -5,12 +5,14 @@
  */
 package com.espol.rentalsystemtest;
 
+import espol.tallertest.Movie;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  *
@@ -29,7 +31,7 @@ public class MovieTest {
     public static void tearDownClass() {
     }
     
-        Movie theManWhoKnewTooMuch, mulan, slumdogMillionaire;
+     Movie theManWhoKnewTooMuch, mulan, slumdogMillionaire;
     @Before
     public void setUp() {
         theManWhoKnewTooMuch = new Movie("The Man Who Knew Too Much", Movie.REGULAR);
