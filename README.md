@@ -5,5 +5,16 @@ Se deben crear las pruebas unitarias para las clases Customer, Movie, MovieRenta
 
 # MovieTest
 
-![ScreenShot](movieTest1.png)
+![ScreenShot](movieTest.png)
 
+# CustomerTest
+
+![Custumer](CustomerTest.PNG)
+
+# VideoGameRentalTest
+
+![VideoGameRentalTest](VideoGameRentalTest.PNG)
+
+# MovieRentalTest
+
+![MovieRentalTest](MovieRentalTest.PNG)
