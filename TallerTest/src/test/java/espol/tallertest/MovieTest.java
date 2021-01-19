@@ -3,62 +3,57 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package espol.tallertest;
+package com.espol.rentalsystemtest;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
- * @author GeovannyRojas
+ * @author MOISES
  */
 public class MovieTest {
     
     public MovieTest() {
     }
     
-    @BeforeAll
+    @BeforeClass
     public static void setUpClass() {
     }
     
-    @AfterAll
+    @AfterClass
     public static void tearDownClass() {
     }
     
-    @BeforeEach
+        Movie theManWhoKnewTooMuch, mulan, slumdogMillionaire;
+    @Before
     public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
+        theManWhoKnewTooMuch = new Movie("The Man Who Knew Too Much", Movie.REGULAR);
+        mulan = new Movie("Mulan", Movie.CHILDRENS);
+        slumdogMillionaire = new Movie("Slumdog Millionaire", Movie.NEW_RELEASE);
     }
 
-    /**
-     * Test of getPriceCode method, of class Movie.
-     */
     @Test
     public void testGetPriceCode() {
-        System.out.println("getPriceCode");
-        Movie instance = new Movie("Over the moon",Movie.REGULAR);
-        int expResult = Movie.REGULAR;
-        int result = instance.getPriceCode();
-        assertEquals(expResult, result);
-
+        assertEquals(Movie.REGULAR, theManWhoKnewTooMuch.getPriceCode());
     }
 
-    /**
-     * Test of setPriceCode method, of class Movie.
-     */
+    @Test
+    public void testGetTitle() {
+        assertEquals("The Man Who Knew Too Much", theManWhoKnewTooMuch._title);
+    }
+
     @Test
     public void testSetPriceCode() {
-        System.out.println("setPriceCode");
-        int arg = 0;
-        Movie instance = new Movie("Resident Evil",Movie.CHILDRENS);
-        instance.setPriceCode(arg);
+        theManWhoKnewTooMuch.setPriceCode(Movie.NEW_RELEASE);
+        assertEquals(Movie.NEW_RELEASE, theManWhoKnewTooMuch.getPriceCode());
+        theManWhoKnewTooMuch.setPriceCode(Movie.REGULAR);
+        assertEquals(Movie.REGULAR, theManWhoKnewTooMuch.getPriceCode());
     }
+
     
 }
