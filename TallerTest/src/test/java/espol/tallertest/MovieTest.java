@@ -57,7 +57,7 @@ public class MovieTest {
     public void testSetPriceCode() {
         System.out.println("setPriceCode");
         int arg = 0;
-        Movie instance = new Movie("alo",Movie.CHILDRENS);
+        Movie instance = new Movie("Resident Evil",Movie.CHILDRENS);
         instance.setPriceCode(arg);
     }
     
